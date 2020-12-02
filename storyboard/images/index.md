@@ -1,0 +1,1 @@
+### This folder contains images used in Round 2 documentation.

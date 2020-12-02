@@ -1,0 +1,40 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Verification and interpretation of truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates.",     
+			"Lab": "Digital Electronics",               
+			"Discipline": "Electronics and Communications",				 
+			"Technology": "HTML, JavaScript, CSS"         
+       }
+   ],
+
+   "developer": [
+       {       
+      "Developer": "Prof. RS Anand",         
+      "Institute": "Indian Institute of Technology Roorkee, Roorkee",         
+      "InstituteAcronym": "IITR"   
+       }
+   ],
+
+   "contributer": [
+       {       
+			"Contributer": "Jasbir Singh",             
+      "Institute": "Indian Institute of Technology Roorkee, Roorkee",               
+			"InstituteAcronym": "IITR"         
+       },
+
+       {       
+			"Contributer": "Rajeev Kumar",              
+      "Institute": "Indian Institute of Technology Roorkee, Roorkee",               
+			"InstituteAcronym": "IITR"         
+       },
+
+       {       
+			"Contributer": "Priyanshi Agarwal",             
+      "Institute": "Indian Institute of Technology Roorkee, Roorkee",               
+			"InstituteAcronym": "IITR"         
+       }
+   ]
+
+}
