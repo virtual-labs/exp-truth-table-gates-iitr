@@ -1,1 +1,1 @@
-## Experiment name
+## Verification and interpretation of truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates.
