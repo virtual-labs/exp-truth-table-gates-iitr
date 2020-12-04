@@ -1,24 +1,32 @@
-## Introduction
+## Introduction (Round 0)
 
 
-<b>Discipline | <b>Fill your discipline name here
+<br>
+
+<b>Discipline | <b> Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Digital Electronics
+<b> Experiment|     <b> 1. 	Verification and interpretation of truth table for AND, OR, NOT, NAND. NOR, Ex-OR, Ex-NOR gates.
 
-### About the Experiment 
+<h5> About the Experiment : </h5> <br>
 
-Fill a brief description of this experiment here
+This experiment is to verify and interpret the logic and truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates using RTL (Resistor Transistor Logic), DTL (Diode Transistor Logic) and TTL (Transistor Transistor Logic) logics in simulator 1 and verify the truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates in simulator 2.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here
+
+<b>Name of Developer | <b> R.S. Anand
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b> IIT Roorkee
+<b> Email id|     <b> anandfee@gmail.com
+<b> Department | Electrical Engineering
 
-### Contributors List
+#### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | R.S. Anand | Faculty | Electrical Engineering | IIT Roorkee, Roorkee | anandfee@gmail.com
+2 | Jasbir Singh | Research Fellow | Electrical Engineering | IIT Roorkee, Roorkee | jasbirjassy6@gmail.com 
+3 | Rajeev Kumar | Research Fellow | Electrical Engineering | IIT Roorkee, Roorkee | rajeevkumar.rke@gmail.com
+4 | Priyanshi Agarwal | Research Fellow | Electrical Engineering | IIT Roorkee, Roorkee | priyanshi.a07@gmail.com
+
+
+<br>

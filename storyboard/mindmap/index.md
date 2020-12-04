@@ -1,0 +1,1 @@
+### This folder contains mindmap used in Round 2 documentation.
