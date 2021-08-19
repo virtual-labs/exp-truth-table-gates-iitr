@@ -1,0 +1,1 @@
+#### To verify and interpret the logic and truth table for OR gate using Diode Resistance Logic (DRL), NOT gate using Transistor and AND, NAND, NOR, Ex-OR & Ex-NOR gates using Resistor Transistor Logic (RTL) in simulator 1 and verify the truth table for AND, OR, NOT, NAND, NOR, Ex-OR, Ex-NOR gates in simulator 2.

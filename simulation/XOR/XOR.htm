@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <title>XOR Gate</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="graph.ob.js"></script>
+
+    <script src="graph_line_use.ob.js"></script>
+
+  <style type="text/css">
+  body 
+  {
+    background-color: #ECEFF4;
+
+  }
+
+  h1
+  {
+    color: maroon;
+  } 
+
+  #wrapper
+  {
+    width:100%;
+  }
+ 
+  .dropbtn
+  {
+    background-color:  #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus
+  {
+    background-color: #3e8e41;
+  }
+
+  .dropdown
+  {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content
+  {
+    display: none;
+    position: relative;
+    background-color: lightblue ;
+    min-width: 750px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a 
+  {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover 
+  {
+    background-color: mistyrose
+  }
+
+
+.show {display:block;}
+</style>
+</head>
+<body outline:black;>
+
+
+<br/>
+
+
+<div class="dropdown" style="left:40px; top:50px;">
+<button onclick="dropdown()" class="dropbtn">INSTRUCTIONS</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home"><b>1) Enter the Boolean input "A" and "B".</b><br/><br/>
+                    <b>2) Enter the Boolean output for your corresponding inputs.</b><br/><br/>
+                    <b>3) Click on "Check" Button to verify your output.</b><br/><br/>
+                    <b>4) Click "Print" if you want to get print out of Truth Table.</b><br/><br/>
+                    
+                   
+                    
+                    </a>
+</div>
+</div>
+<div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:160px;width:1050px;height:700px;left:20px">
+  <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:10px;left:0px; width:300px; height:50px;font-weight: bold;"><p style="text-align:center; color:white"> <b>Verification of truth table for XOR gate</b></p>
+                </div>
+<form id="myForm">
+<div style="position:absolute;left:190px;top:150px;">
+  <table width="0%" border="0">
+    <tr>
+      <td>
+         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" onkeyup="checkmyinput()" name="myinputA" id="A"/></input></td>
+       </tr>
+       
+       <tr>
+       </tr>
+<tr>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr><tr>
+       </tr>
+       <tr>
+      <td>
+         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" name="myinputB" onkeyup="checkmyinputB()" id="B"/></input></td>
+       </tr>
+     </table>
+   </div>
+<div style="position:absolute;left:180px;top:635px;">
+
+<button style=" background: #27d447  !important;height:50px; width:100px"  type="reset" value="Clear"  onclick="clearForm()">Reset</button>
+</div>
+
+<div style="position:absolute;left:310px;top:110px;">
+<table width="0%" border="0"> 
+<tr>
+      <td>
+         <img src="XOR.png"  width="550" height="200"/> 
+       </td>
+       </tr>
+</table>
+</div>
+
+<div style="position:absolute;left:870px;top:200px;">
+  <table width="0%" border="1">
+    <tr>
+      <td>
+         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" onkeyup="checkmyinputZ()" name="myinputZ" id="Z"/></input></td>
+       </tr>
+        <tr>
+       <td><label><input style=" background: #27d447 !important;height:30px; width:105px" id = "button" type = "button" value = "Check" onclick="AddData()"></label></td>
+       </tr>
+      
+</table>
+
+</div>
+
+          
+</br></br></br></br></br></br></br></br></br></br></br></br>
+    <div id="tblwrap" style="position:absolute; border: 2px solid #3385ff; top:380px;width:400px;height:300px;left:580px">
+                <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:0px;left:0px; width:400px; height:50px;font-weight: bold;"><p style=" color:white"> 
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRUTH TABLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input style=" background: #27d447 !important;height:30px; width:100px" id = "pr" type = "button" value = " Print  " onclick="print()"></p>
+                </div>
+               
+                <div id="table" style="background-color: linen;; position:absolute; top:50px;width:400px;height:250px;left:0px; overflow-y: auto;">
+
+                    <table id="mytable" width="400" border="1" >
+
+                        <tr>
+                            <th width="15">Serial No.</th>
+                            <th width="25">A</th>
+                            <th width="25">B</th>
+                            <th width="15">Output</th>
+                            <th width="25" id="R">Remarks</th>
+
+                            
+
+
+                            <!-- <th>load(Watt)</th>-->
+                        </tr>
+                        
+                    </table>
+                    <!-- <table id="mytable" border="1" >
+                    </table> -->
+                    </form>
+                </div>
+    </div>
+
+
+
+
+
+            
+  
+ <br/>
+
+<br/>
+
+  
+ 
+ <script>
+              var n = 1;
+               
+
+
+
+    function AddData()
+    {
+    var e = document.getElementById("A").value;
+    var f = document.getElementById("B").value;
+    var x = document.getElementById("Z").value;
+    var y = document.getElementById("R").value;   
+    if(e === "0" && f === "1" && x === "1"  )
+    {
+       y = "Correct";
+   }
+
+   else if (e === "1" && f === "0" && x === "1" )
+    {
+       y = "Correct";
+   }
+   else if (e === "1" && f === "1" && x === "0"   )
+
+    {
+       y = "Correct";
+   }
+     else if (e === "0" && f === "0" && x === "0"   )
+
+    {
+       y = "Correct";
+   }
+ else
+    {
+     
+      y = "Incorrect";
+}
+    
+
+                      
+
+                    var table = document.getElementById("mytable");
+
+
+                    // Create an empty <tr> element and add it to the 1st position of the table:
+                    var row = table.insertRow(-1);
+                    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    var cell4 = row.insertCell(3);
+                   var cell5 = row.insertCell(4);
+
+                    cell1.innerHTML = n++;
+                    cell2.innerHTML = e;
+                    cell3.innerHTML = f;
+                    cell4.innerHTML = x;
+                     cell5.innerHTML = y;
+                  
+                }
+
+
+function clearForm() {
+           document.getElementById("myForm").reset();
+           
+ 
+} 
+
+function pr() {
+  window.print();
+}
+function dropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script  src="binary.js"></script>           
+ </div>
+             
+</body>
+
+</html>
+
