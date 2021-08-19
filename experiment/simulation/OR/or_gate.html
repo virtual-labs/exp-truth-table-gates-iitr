@@ -71,7 +71,7 @@
   #kit
   {
     background-color: white;
-    height: 500px;
+    height: 650px;
     top: 200px;
     left: 100px;
     margin: 41px;
@@ -90,8 +90,8 @@
                     <b>1) Connect the battery to the circuit.</b><br/><br/>
                     <b>2) Press the switches 1 and 2 for inputs "A" and "B".</b><br/><br/>
                     <b>The switch in ON state is <img src="switchoff.png" width="50" height="30" > and the switch in OFF state is <img src="switchon.png" width="50" height="30" > .</b><br/><br/>
-                    <b>3) The bulb glows if any one or both the switches are ON and it doesn't glow if both the switches are OFF.</b><br/><br/>
-                    <b>The bulb in OFF state is <img src="bulboff1.png" width="40" height="40" > and the bulb in ON state is <img src="bulbon1.png" width="40" height="40" > .
+                    <b>3) The LED glows if any one or both the switches are ON and it doesn't glow if both the switches are OFF.</b><br/><br/>
+                    <b>The LED in OFF state is <img src="bulboff1.png" width="60" height="40" > and the LED in ON state is <img src="bulbon1.png" width="60" height="40" > .
       </a>
     </div>
 </div>
@@ -154,7 +154,8 @@
 
 <img style="position: absolute;left: 50px;top: 230px;"id="myImage13" src="redn.jpg" style="width:5px" width="5" height="194"> 
 
-<img style="position: absolute;left: 664px;top: 196px;"id="myImage14" src="redn.jpg" style="width:5px" width="119" height="5"> 
+<img style="position: absolute;left: 664px;top: 196px;"id="myImage14" src="redn.jpg" style="width:5px" width="52" height="5">
+<img style="position: absolute;left: 728px;top: 196px;"id="myImage15" src="redn.jpg" style="width:5px" width="53" height="5"> 
 
 <div style="position:absolute;left:364px;top:119px;">
 <table width="0%" border="0"> 
@@ -176,13 +177,13 @@
 </table>
 </div>
 
-<div style="position:absolute;left:665px;top:76px;">
+<div style="position:absolute;left:665px;top:80px;">
   <table width="0%" border="0">
     <tr>
       <td>
-        <p style="color:blue;font-size: 11px;" align="center">Bulb</p>
+        <p style="color:blue;font-size: 11px;" align="center">LED</p>
 
-         <img id="Z" src="bulboff1.png" width="90" height="90">
+         <img id="Z" src="bulboff1.png" width="100" height="90">
        </td>
        </tr>
         
@@ -233,7 +234,12 @@
  </br>
 
 </br>
-
+<div style="position:absolute; font-size:13px;background-color: #3385ff;  top:750px;left:650px; width:380px; height:95px;font-weight: bold;">
+          <p style="color:white;font-family:courier;text-align:center;">Specifications:<br>
+            1. Battery = 5V<br>
+          2. Resistor = 1 Kohm<br>
+        3. Diode D1 & D2 = 1N4007 </p>
+        </div> 
 </form>
 </div>
 <script>
@@ -268,7 +274,7 @@ function changeImage()
     document.getElementById("myImage8").src="redn.jpg";
     document.getElementById("myImage13").src="redn.jpg";
     document.getElementById("myImage14").src="redn.jpg";
-        
+     document.getElementById("myImage15").src="redn.jpg";   
 
     Glow();
   } 
@@ -281,7 +287,8 @@ function changeImage()
     document.getElementById("myImage8").src="green.jpg";
     document.getElementById("myImage13").src="green.jpg";
     document.getElementById("myImage14").src="green.jpg";
-        
+      document.getElementById("myImage15").src="green.jpg";   
+   
      Glow();
   }
 }
@@ -300,7 +307,7 @@ function changeImage1()
      document.getElementById("myImage1").src="redn.jpg";
      document.getElementById("myImage6").src="redn.jpg";
      document.getElementById("myImage14").src="redn.jpg";
-        
+     document.getElementById("myImage15").src="redn.jpg";    
     
      Glow();
   } 
@@ -312,7 +319,7 @@ function changeImage1()
     document.getElementById("myImage13").src="green.jpg";
     document.getElementById("myImage8").src="green.jpg";
     document.getElementById("myImage14").src="green.jpg";
-        
+    document.getElementById("myImage15").src="green.jpg";    
     
      Glow();
   }
@@ -339,7 +346,7 @@ function Glow()
          document.getElementById("myImage13").src="green.jpg";
         document.getElementById("myImage8").src="green.jpg";
         document.getElementById("myImage14").src="green.jpg";
-        
+        document.getElementById("myImage15").src="green.jpg";
      }
 
      else if(e.src.match("switchoff") && f.src.match("switchon"))
@@ -351,7 +358,7 @@ function Glow()
         document.getElementById("myImage13").src="green.jpg";
         document.getElementById("myImage8").src="green.jpg";
         document.getElementById("myImage14").src="green.jpg";
-        
+        document.getElementById("myImage15").src="green.jpg";
         
      }
 
@@ -361,7 +368,7 @@ function Glow()
        document.getElementById("Z").src="bulbon1.png";
         document.getElementById("myImage2").src="green.jpg";
         document.getElementById("myImage14").src="green.jpg";
-        
+        document.getElementById("myImage15").src="green.jpg";
 	   }
     }
 
