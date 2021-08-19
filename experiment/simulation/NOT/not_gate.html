@@ -71,7 +71,7 @@
   #kit
   {
     background-color: white;
-    height: 500px;
+    height: 580px;
     top: 200px;
     left: 100px;
     margin: 41px;
@@ -91,8 +91,8 @@
                     <b>2) Press the switch 1 for the battery to be connected to the circuit.</b><br/><br/>
                     <b>3) Press the switch 2 for input A.</b><br/><br/>
                     <b>The switch in ON state is <img src="switchoff1.png" width="30" height="50" > and the switch in OFF state is <img src="switchon1.png" width="30" height="50" > .</b><br/><br/>
-                    <b>4) The bulb glows if the switch 2 is OFF and does not glow if the switch 2 is ON.</b><br/><br/>
-                    <b>The bulb in OFF state is <img src="bulboff1.png" width="40" height="40" > and the bulb in ON state is <img src="bulbon1.png" width="40" height="40" > .
+                    <b>4) The LED glows if the switch 2 is OFF and does not glow if the switch 2 is ON.</b><br/><br/>
+                    <b>The LED in OFF state is <img src="bulboff1.png" width="60" height="40" > and the LED in ON state is <img src="bulbon1.png" width="60" height="40" > .
       </a>
     </div>
 </div>
@@ -122,7 +122,8 @@
 
 <img style="position: absolute;left: 486px;top: 425px;"id="myImage3" src="black.png" style="width:5px" width="297" height="3"> 
 
-<img style="position: absolute;left: 488px;top: 298px;"id="myImage4" src="redn.jpg" style="width:5px" width="5" height="127">
+<img style="position: absolute;left: 488px;top: 298px;"id="myImage4" src="redn.jpg" style="width:5px" width="5" height="67">
+<img style="position: absolute;left: 488px;top: 378px;"id="myImage16" src="redn.jpg" style="width:5px" width="5" height="50">
 
 <img style="position: absolute;left: 84px;top: 122px;"id="myImage5" src="redn.jpg" style="width:5px" width="305" height="5">
 
@@ -186,13 +187,13 @@
 
 </div>
 
-<div style="position:absolute;left:484px;top:275px;">
+<div style="position:absolute;left:477px;top:275px;">
   <table width="0%" border="0">
     <tr>
       <td>
-        <p style="color:blue;font-size: 11px;" align="center">Bulb</p>
+        <p style="color:blue;font-size: 11px;" align="center">LED</p>
 
-         <img id="Z" src="bulboff.png" width="90" height="90">
+         <img id="Z" src="bulboff.png" width="90" height="110">
        </td>
        </tr>
         
@@ -271,7 +272,12 @@
  </br>
 
 </br>
-
+<div style="position:absolute; font-size:13px;background-color: #3385ff;  top:650px;left:650px; width:380px; height:95px;font-weight: bold;">
+          <p style="color:white;font-family:courier;text-align:center;">Specifications:<br>
+            1. Battery = 5V<br>
+          2. Resistor R1 = 1 Kohm & R2 = 10 Kohm<br>
+        3. Transistor = NPN 2N3904 </p>
+        </div> 
 </form>
 </div>
 <script>
@@ -305,6 +311,7 @@ function changeImage()
         document.getElementById("myImage1").src="green.jpg";
         document.getElementById("myImage2").src="green.jpg";
        document.getElementById("myImage4").src="green.jpg";
+       document.getElementById("myImage16").src="green.jpg";
        document.getElementById("myImage5").src="redn.jpg";
        document.getElementById("myImage6").src="redn.jpg";
        document.getElementById("myImage7").src="redn.jpg";
@@ -357,6 +364,7 @@ function Glow()
         document.getElementById("myImage1").src="green.jpg";
         document.getElementById("myImage2").src="green.jpg";
       document.getElementById("myImage4").src="redn.jpg";
+      document.getElementById("myImage16").src="redn.jpg";
        document.getElementById("myImage5").src="green.jpg";
        document.getElementById("myImage6").src="green.jpg";
        document.getElementById("myImage7").src="green.jpg";
@@ -373,6 +381,7 @@ function Glow()
         document.getElementById("myImage1").src="green.jpg";
         document.getElementById("myImage2").src="green.jpg";
        document.getElementById("myImage4").src="green.jpg";
+       document.getElementById("myImage16").src="green.jpg";
        document.getElementById("myImage5").src="redn.jpg";
        document.getElementById("myImage6").src="redn.jpg";
        document.getElementById("myImage7").src="redn.jpg";
