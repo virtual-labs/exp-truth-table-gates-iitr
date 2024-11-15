@@ -1,0 +1,38 @@
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/AND/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/NAND/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/NOR/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/NOT/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/OR/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/XNOR/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-truth-table-gates-iitr/exp-truth-table-gates-iitr/experiment/simulation/XOR/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+✖ 21 problems (0 errors, 21 warnings)
+

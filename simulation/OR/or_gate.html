@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <title>OR GATE</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="graph.ob.js"></script>
+  <script src="graph_line_use.ob.js"></script>
+  <style type="text/css">
+  body 
+  {
+    background-color:#ECEFF4;
+
+  }
+
+  h1
+  {
+    color: maroon;
+  } 
+  #wrapper
+  {
+    width:100%;
+  }
+ 
+  .dropbtn
+  {
+    background-color:  #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus
+  {
+    background-color: #3e8e41;
+  }
+  .dropdown
+  {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content
+  {
+    display: none;
+    position: relative;
+    background-color: lightblue ;
+    min-width: 750px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a 
+  {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover 
+  {
+    background-color: mistyrose
+  }
+  .show 
+  {
+    display:block;
+  }
+  #kit
+  {
+    background-color: white;
+    height: 650px;
+    top: 200px;
+    left: 100px;
+    margin: 41px;
+
+  }
+
+  </style>
+  </head>
+  <body outline:black;>
+  </br>
+  <div class="dropdown" style="left:40px; top:50px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                    <b>1) Connect the battery to the circuit.</b><br/><br/>
+                    <b>2) Press the switches 1 and 2 for inputs "A" and "B".</b><br/><br/>
+                    <b>The switch in ON state is <img src="switchoff.png" width="50" height="30" > and the switch in OFF state is <img src="switchon.png" width="50" height="30" > .</b><br/><br/>
+                    <b>3) The LED glows if any one or both the switches are ON and it doesn't glow if both the switches are OFF.</b><br/><br/>
+                    <b>The LED in OFF state is <img src="bulboff1.png" width="60" height="40" > and the LED in ON state is <img src="bulbon1.png" width="60" height="40" > .
+      </a>
+    </div>
+</div>
+<div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:160px;width:1050px;height:700px;left:20px">
+  <div style="position:absolute; font-size:14px;background-color: #3385ff;top:5px;left:0px;width:400px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform OR gate on kit</b>
+    </p>
+  </div>
+  <div id="kit" style="left:50px;top:100px;">
+  <form id="myForm">
+  <p style="color:blue;font-size: 11px;position: absolute;left:363px;top:107px" >Diode 1</p>
+  <p style="color:blue;font-size: 11px;position: absolute;left:363px;top:180px" >Diode 2</p>
+  <p style="color:blue;font-size: 11px;position: absolute;left:600px;top:137px">Resistor</p>
+    <div style="position:absolute; font-size:14px;background-color: #3385ff;  top:25px;left:630px; width:380px; height:50px;font-weight: bold;">
+      <p style="color:white;font-family:courier;text-align:center;">OR logic implementation using DRL(Diode Resistance Logic)</p>
+    </div>
+   <div style="position:absolute;left:151px;top:94px;" >
+    <table width="0%" border=0>
+     <tr>
+      <td>
+        <p style="color:blue;font-size: 11px;" align="center">Switch 1 (A)</p>
+          <img id="A" onclick="changeImage()" src="switchon.png" width="70" height="40">
+    </div>
+      </td>
+    </tr>
+      <td>
+        <p style="color:blue;font-size: 11px;" align="center">Switch 2 (B)</p>
+
+        <img id="B" onclick="changeImage1()" src="switchon.png" width="70" height="40">
+          
+</td>
+       </tr>
+     </table>
+   </div>
+
+
+<img style="position: absolute;left: 224px;top: 162px;"id="myImage" src="redn.jpg" style="width:5px" width="145" height="5"> 
+
+<img style="position: absolute;left: 224px;top: 230px;"id="myImage1" src="redn.jpg" style="width:20px" width="145" height="5">
+
+<img style="position: absolute;left: 50px;top: 162px;"id="myImage5" src="redn.jpg" style="width:5px" width="105" height="5">
+
+<img style="position: absolute;left: 50px;top: 230px;"id="myImage6" src="redn.jpg" style="width:5px" width="105" height="5">
+
+
+<img style="position: absolute;left: 50px;top: 162px;"id="myImage7" src="redn.jpg" style="width:5px" width="5" height="68"> 
+
+
+<img style="position: absolute;left: 50px;top: 424px;"id="myImage8" src="redn.jpg" style="width:5px" width="731" height="5">   
+
+<img style="position: absolute;left: 780px;top: 198px;"id="myImage9" src="redn.jpg" style="width:5px" width="3" height="55"> 
+
+<img style="position: absolute;left: 780px;top: 300px;"id="myImage10" src="black.png" style="width:5px" width="3" height="128"> 
+
+
+<img style="position: absolute;left: 780px;top: 253px;"id="myImage11" src="redn.jpg" style="width:5px" width="22" height="3">
+
+<img style="position: absolute;left: 780px;top: 300px;"id="myImage12" src="black.png" style="width:5px" width="22" height="3">
+
+<img style="position: absolute;left: 50px;top: 230px;"id="myImage13" src="redn.jpg" style="width:5px" width="5" height="194"> 
+
+<img style="position: absolute;left: 664px;top: 196px;"id="myImage14" src="redn.jpg" style="width:5px" width="52" height="5">
+<img style="position: absolute;left: 728px;top: 196px;"id="myImage15" src="redn.jpg" style="width:5px" width="53" height="5"> 
+
+<div style="position:absolute;left:364px;top:119px;">
+<table width="0%" border="0"> 
+<tr>
+      <td>
+         <img src="orr.png"  width="135" height="146"> 
+       </td>
+       </tr>
+</table>
+</div>
+
+<div style="position:absolute;left:498px;top:164px;">
+<table width="0%" border="0"> 
+<tr>
+      <td>
+         <img src="res1.png"  width="165" height="64"> 
+       </td>
+       </tr>
+</table>
+</div>
+
+<div style="position:absolute;left:665px;top:80px;">
+  <table width="0%" border="0">
+    <tr>
+      <td>
+        <p style="color:blue;font-size: 11px;" align="center">LED</p>
+
+         <img id="Z" src="bulboff1.png" width="100" height="90">
+       </td>
+       </tr>
+        
+       </tr>
+      
+</table>
+
+</div>
+<div style="position:absolute;left:820px;top:191px;">
+
+<table width="0%" border="0" > 
+<tr>
+      <td>
+        <p style="color:blue;font-size: 11px;" align="center">Battery</p>
+
+         <img id="bat" src="battery.png"  width="90" height="100" > 
+         <br><p id="demo" style="color:green"></p>
+         
+       </td>
+       </tr>
+</table>
+</div>
+ </div>  
+
+ <div style="position:absolute;left:751px;top:225px;">
+
+<table width="0%" border="0" > 
+<tr>
+      <td>
+        <font size="6">+</font>
+          </td>
+       </tr>
+         </tr><tr></tr><tr></tr><tr></tr>
+         
+      <td>
+      <font size="7" >-</font>
+   
+       
+</td>
+       </tr>
+     </table>
+      
+</table>
+</div>
+
+ </div>         
+  
+ </br>
+
+</br>
+<div style="position:absolute; font-size:13px;background-color: #3385ff;  top:750px;left:650px; width:380px; height:95px;font-weight: bold;">
+          <p style="color:white;font-family:courier;text-align:center;">Specifications:<br>
+            1. Battery = 5V<br>
+          2. Resistor = 1 Kohm<br>
+        3. Diode D1 & D2 = 1N4007 </p>
+        </div> 
+</form>
+</div>
+<script>
+
+  //move battery
+ 
+var bat1 = document.getElementById('bat');
+var position = 0;
+bat1.style.position = 'relative';
+bat.onclick = function () 
+{
+  
+  bat1.style.right = 20 + 'px';
+  document.getElementById("demo").innerHTML = "Connected!!";
+
+}
+
+
+function changeImage() 
+{
+  if(document.getElementById("demo").innerHTML !== "Connected!!")
+    alert( 'Connect battery first!' );
+  else
+   {
+  var image = document.getElementById('A');
+  if (image.src.match("switchoff"))
+   {
+    image.src = "switchon.png";
+    document.getElementById("myImage").src="redn.jpg";
+    document.getElementById("myImage5").src="redn.jpg";
+    document.getElementById("myImage7").src="redn.jpg";
+    document.getElementById("myImage8").src="redn.jpg";
+    document.getElementById("myImage13").src="redn.jpg";
+    document.getElementById("myImage14").src="redn.jpg";
+     document.getElementById("myImage15").src="redn.jpg";   
+
+    Glow();
+  } 
+  else 
+  {
+    image.src = "switchoff.png";
+     document.getElementById("myImage").src="green.jpg";
+    document.getElementById("myImage5").src="green.jpg";
+    document.getElementById("myImage7").src="green.jpg";
+    document.getElementById("myImage8").src="green.jpg";
+    document.getElementById("myImage13").src="green.jpg";
+    document.getElementById("myImage14").src="green.jpg";
+      document.getElementById("myImage15").src="green.jpg";   
+   
+     Glow();
+  }
+}
+}
+
+function changeImage1() 
+{
+   if(document.getElementById("demo").innerHTML !== "Connected!!")
+    alert( 'Connect battery first!' );
+  else
+   {
+  var image = document.getElementById('B');
+  if (image.src.match("switchoff"))
+   {
+    image.src = "switchon.png";
+     document.getElementById("myImage1").src="redn.jpg";
+     document.getElementById("myImage6").src="redn.jpg";
+     document.getElementById("myImage14").src="redn.jpg";
+     document.getElementById("myImage15").src="redn.jpg";    
+    
+     Glow();
+  } 
+  else 
+  {
+    image.src = "switchoff.png";
+     document.getElementById("myImage1").src="green.jpg";
+        document.getElementById("myImage6").src="green.jpg";
+    document.getElementById("myImage13").src="green.jpg";
+    document.getElementById("myImage8").src="green.jpg";
+    document.getElementById("myImage14").src="green.jpg";
+    document.getElementById("myImage15").src="green.jpg";    
+    
+     Glow();
+  }
+}
+
+}
+function Glow()
+    {
+    var e = document.getElementById("A");
+    var f = document.getElementById("B");
+    if(e.src.match("switchon") && f.src.match("switchon"))
+    {
+       document.getElementById("Z").src="bulboff1.png";
+         document.getElementById("myImage13").src="redn.jpg";
+        document.getElementById("myImage8").src="redn.jpg";
+
+     }
+
+     else if(e.src.match("switchon") && f.src.match("switchoff"))
+    {
+       document.getElementById("Z").src="bulbon1.png";
+       document.getElementById("myImage1").src="green.jpg";
+        document.getElementById("myImage6").src="green.jpg";
+         document.getElementById("myImage13").src="green.jpg";
+        document.getElementById("myImage8").src="green.jpg";
+        document.getElementById("myImage14").src="green.jpg";
+        document.getElementById("myImage15").src="green.jpg";
+     }
+
+     else if(e.src.match("switchoff") && f.src.match("switchon"))
+    {
+       document.getElementById("Z").src="bulbon1.png";
+       document.getElementById("myImage").src="green.jpg";
+        document.getElementById("myImage5").src="green.jpg";
+        document.getElementById("myImage7").src="green.jpg";
+        document.getElementById("myImage13").src="green.jpg";
+        document.getElementById("myImage8").src="green.jpg";
+        document.getElementById("myImage14").src="green.jpg";
+        document.getElementById("myImage15").src="green.jpg";
+        
+     }
+
+   else
+     {
+     
+       document.getElementById("Z").src="bulbon1.png";
+        document.getElementById("myImage2").src="green.jpg";
+        document.getElementById("myImage14").src="green.jpg";
+        document.getElementById("myImage15").src="green.jpg";
+	   }
+    }
+
+
+function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</div>
+</div>
+</form>
+</body>
+</html>
